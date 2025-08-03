@@ -100,6 +100,7 @@ html, body {
 /* Content panels */
 .content-group {
   padding: 0px 20px 25px;
+  margin-bottom: 0px;
   background-color: #010127;
   background-image: url('../images/background.png');
   background-size: cover;
@@ -141,22 +142,13 @@ html, body {
 .content-image {
   flex: 2;
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-.portrait {
+.content-image .portrait {
   width: 100%;
-  max-width: 100%;
-  height: auto;
-  object-fit: contain;
+  height: 100%;
+  object-fit: cover;
   display: block;
-  margin: 0 auto;
-  padding: 10px;
-  box-sizing: border-box;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: transform 0.3s ease;
 }
 
 .portrait:hover {
