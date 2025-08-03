@@ -12,6 +12,27 @@
 
 </head>
 
+<script>
+  function openOverlay(src) {
+    const overlay = document.getElementById("image-overlay");
+    const overlayImg = document.getElementById("overlay-img");
+    overlayImg.src = src;
+    overlay.style.display = "flex";
+  }
+
+  function closeOverlay() {
+    document.getElementById("image-overlay").style.display = "none";
+  }
+
+  // Optional: Close overlay with ESC key
+  document.addEventListener('keydown', function(e) {
+    if (e.key === "Escape") {
+      closeOverlay();
+    }
+  });
+</script>
+
+
 
 <body>
     <!-- toolbar -->
@@ -65,7 +86,7 @@
                 </div>
 
                 <div class="content-image">
-                    <img src="images/confidantMenu.png" alt="Eran Schekkerman" class="portrait">
+                    <img src="images/confidantMenu.png" alt="Eran Schekkerman" class="portrait" onclick="openOverlay(this.src)">
                 </div>
             </div>
         </div>
@@ -82,7 +103,7 @@
                 </div>
 
                 <div class="content-image">
-                    <img src="../../images/portrait2.jpg" alt="Eran Schekkerman" class="portrait">
+                    <img src="../../images/portrait2.jpg" alt="Eran Schekkerman" class="portrait" onclick="openOverlay(this.src)">
                 </div>
             </div>
         </div>
@@ -99,11 +120,15 @@
                 </div>
 
                 <div class="content-image">
-                    <img src="../../images/portrait2.jpg" alt="Eran Schekkerman" class="portrait">
+                    <img src="../../images/portrait2.jpg" alt="Eran Schekkerman" class="portrait" onclick="openOverlay(this.src)">
                 </div>
             </div>
         </div>
 
+        <!-- Image Overlay -->
+        <div id="image-overlay" class="overlay" onclick="closeOverlay()">
+        <img id="overlay-img" src="" alt="Expanded Image" />
+        </div>
 
 
 
