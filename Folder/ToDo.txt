@@ -1,0 +1,12 @@
+must have
+    - concept project page layout
+
+
+should have
+    - back and forth arrows bottom of screen
+    - navigate toolbar to items
+    
+
+could have
+    - change 'I do art' into widget, not pannel. Add Username for if link breaks
+    - bolden toolbar when item selected
