@@ -211,7 +211,7 @@ html, body {
     display: block;
   }
 
-  @media (max-width:600px) {
+  @media (max-width:768px) {
   .about-container {
     flex-direction: column;
   }
@@ -298,7 +298,7 @@ html, body {
   }
 
   .panel5 p {
-    font-size: 10px;
+    font-size: 12px;
     text-align: center;
     margin-top: 300px;
   }
