@@ -9,9 +9,9 @@ html, body {
 
 /* Toolbar */
 .toolbar {
-  background-color: #010127;         
+  background-color: #010127;
   color: white;
-  text-align: center;             
+  text-align: center;
   padding: 15px 0;
   position: fixed;
   top: 0;
@@ -19,15 +19,22 @@ html, body {
   z-index: 5;
 }
 
+.toolbar-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
 .toolbar a {
   color: white;
   text-decoration: none;
-  margin: 0 15px;
   font-weight: bold;
   font-family: Arial, sans-serif;
   font-size: 16px;
   transition: color 0.3s ease;
 }
+
 
 /* panels */
 
