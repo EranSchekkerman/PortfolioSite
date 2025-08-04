@@ -204,3 +204,47 @@ html, body {
     width: auto;
   }
 }
+
+/* panel 5 */
+  .panel5 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #250155;
+    color: #ffffff;
+    box-sizing: border-box;
+  }
+
+  .title {
+    text-align: center;
+    margin: 0px;
+  }
+
+  .suggestion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+  .project-title {
+    padding-top: 20px;
+  }
+
+  .suggestion-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    box-sizing: border-box;
+  }
+
+  .footer-text {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 10px;
+    color: #ffffff;
+  }
