@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Eran Schekkerman | Portfolio</title>
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="courtOfGods.css">
+
+
+</head>
+
+<script>
+// image zoom-in overlay 
+  function openOverlay(src) {
+    const overlay = document.getElementById("image-overlay");
+    const overlayImg = document.getElementById("overlay-img");
+    overlayImg.src = src;
+    overlay.style.display = "flex";
+  }
+
+  function closeOverlay() {
+    document.getElementById("image-overlay").style.display = "none";
+  }
+
+  // Optional: Close overlay with ESC key
+  document.addEventListener('keydown', function(e) {
+    if (e.key === "Escape") {
+      closeOverlay();
+    }
+  });
+</script>
+
+
+
+<body>
+    <!-- toolbar -->
+    <div class="toolbar">
+        <a href="../../index.html#home">Home</a>
+        <a href="../../index.html#projects">Portfolio</a>
+        <a href="../../index.html#about">About Me</a>
+        <a href="../../index.html##contact">Contact</a>
+    </div>
+
+    <!-- contents -->
+    <div class="container">
+
+        <!-- title panel -->
+        <div class="panel1">
+        <div class="title-wrapper">
+            <img src="images/header1.png" alt="Header Image" class="header-image">
+            <h1 class="title-text">Concrete Rose</h1>
+        </div>
+        </div>
+
+
+        <!-- summary panel -->
+        <div class="panel2">
+            <div class="panel">
+                <h1>About Game</h1>
+                <p>
+                Concrete Rose is a Hip-Hop jRPG game currently in development by Coquito Games.
+                During my graduation assignment I developed a dynamic social system and created 
+                a complementary narrative demo using Unity and Articy:Draft X.
+                </p>
+            </div>
+        </div>
+
+        <!-- content panels -->
+        <div class="content-group">
+            <div class="content-panel">
+                <div class="text">
+                    <h1>Social Link System</h1>
+                    <p>
+                    Concrete Rose is a game with a confidant system much like the Persona series, though there is a few large differences I am implemented during my work at Coquito Games.<br><br>
+
+                    I created the biggest feature of this system with a focus on player choices and consequences.
+                    The player chooses to add NPCs to their team and could very well choose to fight alone and unlock a hidden ending. 
+                    Player choice is also encouraged by the relationship-based level system that lets players choose in-game buffs they can use in battles.<br><br>
+
+                    Furthermore I designed a dynamic social variable system that gave NPC extra character traits by the use of love language modifiers, which act as a double edged sword when it comes to social interactions with the NPCs.
+                    </p>
+                </div>
+
+                <div class="content-image">
+                    <img src="images/confidantMenu.png" alt="Confidant System" class="portrait" onclick="openOverlay(this.src)">
+                </div>
+            </div>
+        </div>
+
+        <div class="content-group">
+            <div class="content-panel">
+                <div class="text">
+                    <h1>Dialogue Implementation</h1>
+                    <p>
+                    For the project I wrote 10 days of dummy dialogue for 2 seperate characters, including player choices and consequences.
+                    I wrote inside Articy:Draft X and implemented into Unity using the Articy:Draft importer for Unity, and matched it to the project needs. 
+                    </p>
+                </div>
+
+                <div class="content-image">
+                    <img src="images/dialogueWindow.png" alt="Dialogue Window" class="portrait" onclick="openOverlay(this.src)">
+                </div>
+            </div>
+        </div>
+
+        <div class="content-group">
+            <div class="content-panel">
+                <div class="text">
+                    <h1>UI Creation</h1>
+                    <p>
+                    I designed and implemented the UI for the narrative demo and matched it to the style of the game to further convey to themes of the game. 
+                    I then made it controller friendly to suit the main target console.
+                    </p>
+                </div>
+
+                <div class="content-image">
+                    <img src="images/escapeMenu.png" alt="Escape Menu UI" class="portrait" onclick="openOverlay(this.src)">
+                </div>
+            </div>
+        </div>
+
+        <!-- Image Overlay -->
+        <div id="image-overlay" class="overlay" onclick="closeOverlay()">
+        <img id="overlay-img" src="" alt="Expanded Image" />
+        </div>
+
+        <!-- end panel -->
+        <div class="panel5">
+            <div class="title">
+                <h2>Curious? Look at this neat project!</h2>
+            </div>
+
+            <div class="suggestion"> 
+                <a href="projects/ConcreteRose/concreteRose.html" target="_blank" rel="noopener noreferrer">
+                <img src="images/ConcreteRoseThumb.png" alt="Concrete Rose" class="suggestion-image" />
+                </a>
+            </div>
+
+            <div class="project-title"> 
+                <a href="projects/ConcreteRose/concreteRose.html" target="_blank" rel="noopener noreferrer"></a>
+            </div>
+
+            <div class="footer-text">
+                <p>
+                ©2025 made by Eran Schekkerman<br>
+                Hosted through Github
+                </p>
+            </div>
+        </div>
+  
+</body>
+
+</html>

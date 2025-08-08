@@ -5,6 +5,9 @@ html, body {
   font-family: Arial, Helvetica, sans-serifs;
   box-sizing: border-box;
   background-color: #010127; 
+  
+  scroll-behavior: smooth;
+  scroll-padding-top: 120px;
 }
 
 /* Toolbar */
@@ -23,7 +26,8 @@ html, body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 40px;
+  gap: clamp(10px, 5vw, 40px);
+
 }
 
 .toolbar a {
