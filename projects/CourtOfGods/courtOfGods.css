@@ -11,7 +11,7 @@ html, body {
 
 /* Toolbar */
 .toolbar {
-  background-color: #010127;         
+  background-color: #010127;
   color: white;
   text-align: center;
   padding: 15px 0;
@@ -19,15 +19,24 @@ html, body {
   top: 0;
   width: 100%;
   z-index: 5;
+  overflow-x: hidden;
+}
+
+.toolbar-links {
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: clamp(10px, 5vw, 40px);
 }
 
 .toolbar a {
   color: white;
   text-decoration: none;
-  margin: 0 15px;
   font-weight: bold;
   font-family: Arial, sans-serif;
-  font-size: 16px;
+  font-size: 20px;
   transition: color 0.3s ease;
 }
 
