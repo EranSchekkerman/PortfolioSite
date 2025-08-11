@@ -36,7 +36,7 @@ html, body {
   text-decoration: none;
   font-weight: bold;
   font-family: Arial, sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   transition: color 0.3s ease;
 }
 
@@ -333,8 +333,6 @@ html, body {
   .footer-text {
     font-size: 12px;
     text-align: center;
-    margin-top: 10px;
-    color: #ffffff;
     margin-top: 10px;
     color: #250155;
   }
