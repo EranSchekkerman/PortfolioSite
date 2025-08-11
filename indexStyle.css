@@ -25,7 +25,7 @@ html, body {
   margin: 0 15px;
   font-weight: bold;
   font-family: Arial, sans-serif;
-  font-size: 16px;
+  font-size: 20px;
   transition: color 0.3s ease;
 }
 
@@ -300,5 +300,10 @@ html, body {
   .panel5 p {
     font-size: 12px;
     text-align: center;
+<<<<<<< Updated upstream
     margin-top: 300px;
+=======
+    margin-top: 10px;
+    color: #ffffff;
+>>>>>>> Stashed changes
   }

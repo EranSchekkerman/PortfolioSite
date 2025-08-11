@@ -1,0 +1,154 @@
+<<<<<<< Updated upstream
+=======
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Eran Schekkerman | Portfolio</title>
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="courtOfGods.css">
+
+</head>
+
+<script>
+// image zoom-in overlay 
+  function openOverlay(src) {
+    const overlay = document.getElementById("image-overlay");
+    const overlayImg = document.getElementById("overlay-img");
+    overlayImg.src = src;
+    overlay.style.display = "flex";
+  }
+
+  function closeOverlay() {
+    document.getElementById("image-overlay").style.display = "none";
+  }
+
+  // Optional: Close overlay with ESC key
+  document.addEventListener('keydown', function(e) {
+    if (e.key === "Escape") {
+      closeOverlay();
+    }
+  });
+</script>
+
+
+
+<body>
+    <!-- toolbar -->
+    <div class="toolbar">
+        <a href="../../index.html#home">Home</a>
+        <a href="../../index.html#projects">Portfolio</a>
+        <a href="../../index.html#about">About Me</a>
+        <a href="../../index.html##contact">Contact</a>
+    </div>
+
+    <!-- contents -->
+    <div class="container">
+
+        <!-- title panel -->
+        <div class="panel1">
+            <div class="title-wrapper">
+                <h1 class="title-text">Court of Gods</h1>
+            </div>
+        </div>
+
+
+        <!-- summary panel -->
+        <div class="panel2">
+            <div class="panel">
+                <h1>About Game</h1>
+                <p>
+                Court of Gods is a personal writing project I have been leasurely working on for the last few years.
+                The main theme of the story centers around gods and the cycle of immortality.<br><br>
+
+                This page goes over a scene I wrote, voice directed and storyboarded for a school project.
+                </p>
+            </div>
+        </div>
+
+        <!-- content panels -->
+        <div class="content-group">
+            <div class="content-panel">
+                <div class="text">
+                    <h1>Arcweave Project</h1>
+                    <p>
+                    The main project was made and edited in Arcweave.
+                    <br><br>
+                    <u>Click on the image to play the demo.</u>
+                    </p>
+                </div>
+
+                <div class="content-image">
+                    <a href="https://arcweave.com/app/project/YR6R8MxlVJ/play" target="_blank" rel="noopener noreferrer">
+                        <img src="images/ArcweavePanels.png" alt="Confidant System" class="portrait">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-group">
+            <div class="content-panel">
+                <div class="text">
+                    <h1>Script Writing</h1>
+                    <p>
+                    text!
+                    </p>
+                </div>
+
+                <div class="content-image">
+                    <img src="images/CourtOfGods.png" alt="Dialogue Window" class="portrait" onclick="openOverlay(this.src)">
+                </div>
+            </div>
+        </div>
+
+        <div class="content-group">
+            <div class="content-panel">
+                <div class="text">
+                    <h1>Character & Voice Direction</h1>
+                    <p>
+                    text!
+                    </p>
+                </div>
+
+                <div class="content-image">
+                    <img src="images/CourtOfGods.png" alt="Escape Menu UI" class="portrait" onclick="openOverlay(this.src)">
+                </div>
+            </div>
+        </div>
+
+        <!-- Image Overlay -->
+        <div id="image-overlay" class="overlay" onclick="closeOverlay()">
+        <img id="overlay-img" src="" alt="Expanded Image" />
+        </div>
+
+        <!-- end panel -->
+        <div class="panel5">
+            <div class="title">
+                <h2>Curious? Look at this neat project!</h2>
+            </div>
+
+            <div class="suggestion"> 
+                <a href="../ConcreteRose/concreteRose.html" target="_blank" rel="noopener noreferrer">
+                <img src="../ConcreteRose/images/ConcreteRoseThumb.png" alt="Concrete Rose" class="suggestion-image" />
+                </a>
+            </div>
+
+            <div class="project-title"> 
+                <a href="../ConcreteRose/concreteRose.html" target="_blank" rel="noopener noreferrer"></a>
+            </div>
+
+            <div class="footer-text">
+                <p>
+                ©2025 made by Eran Schekkerman<br>
+                Hosted through Github
+                </p>
+            </div>
+        </div>
+  
+</body>
+
+</html>
+>>>>>>> Stashed changes
