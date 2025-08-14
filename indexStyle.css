@@ -36,7 +36,7 @@ html, body {
   text-decoration: none;
   font-weight: bold;
   font-family: Arial, sans-serif;
-  font-size: 20px;
+  font-size: 15px;
   transition: color 0.3s ease;
 }
 
@@ -158,14 +158,21 @@ html, body {
       background-color: #250155;
       color: #ffffff;
       text-align: center;
+      text-decoration: none;
     }
 
-    .panel3 h2 {
-      text-align: center;
+    .panel3 a {
+      text-decoration: none;
+      color: #ffffff;
     }
 
     .icon-image {
       height: 80px;
+    }
+
+    .panel3 a:hover {
+      text-decoration: underline;
+      color: #ffffff;
     }
 
 /* panel 4 */
@@ -222,6 +229,16 @@ html, body {
     object-fit: cover;
     display: block;
   }
+
+  .cv-container a {
+    color: #ffffff;           /* makes the link text white */
+    text-decoration: none;    /* removes the underline */
+  }
+
+  .cv-container a:hover {
+    text-decoration: underline; /* optional: underline only on hover */
+  }
+
 
   @media (max-width:600px) {
   .about-container {

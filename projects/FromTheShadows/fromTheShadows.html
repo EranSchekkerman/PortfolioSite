@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>From The Shadows | Eran Schekkerman</title>
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fromTheShadows.css">
+
+</head>
+
+<script>
+// image zoom-in overlay 
+  function openOverlay(src) {
+    const overlay = document.getElementById("image-overlay");
+    const overlayImg = document.getElementById("overlay-img");
+    overlayImg.src = src;
+    overlay.style.display = "flex";
+  }
+
+  function closeOverlay() {
+    document.getElementById("image-overlay").style.display = "none";
+  }
+
+  // Optional: Close overlay with ESC key
+  document.addEventListener('keydown', function(e) {
+    if (e.key === "Escape") {
+      closeOverlay();
+    }
+  });
+</script>
+
+
+
+<body>
+
+    <!-- toolbar -->
+    <div class="toolbar">
+        <nav class="toolbar-links">
+            <a href="../../index.html#home">Home</a>
+            <a href="../../index.html#projects">Portfolio</a>
+            <a href="../../index.html#about">About Me</a>
+            <a href="../../index.html##contact">Contact</a>
+        </nav>
+    </div>
+
+    <!-- contents -->
+    <div class="container">
+
+        <!-- title panel -->
+        <div class="panel1">
+            <div class="title-wrapper">
+                <h1 class="title-text">Under Construction</h1>
+            </div>
+        </div>
