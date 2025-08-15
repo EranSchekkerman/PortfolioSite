@@ -24,13 +24,36 @@
     document.getElementById("image-overlay").style.display = "none";
   }
 
-  // Optional: Close overlay with ESC key
   document.addEventListener('keydown', function(e) {
     if (e.key === "Escape") {
       closeOverlay();
     }
   });
+
+  function openVideoPopup(url) {
+    const popup = document.getElementById('video-popup');
+    const iframe = document.getElementById('youtube-iframe');
+    iframe.src = url;
+    popup.style.display = 'flex';
+}
+
+function closeVideoPopup() {
+    const popup = document.getElementById('video-popup');
+    const iframe = document.getElementById('youtube-iframe');
+    iframe.src = ""; // stop video
+    popup.style.display = 'none';
+}
 </script>
+
+
+<!-- Video Popup -->
+<div id="video-popup" class="overlay" onclick="closeVideoPopup()">
+    <div class="video-wrapper" onclick="event.stopPropagation()">
+        <span class="close-btn" onclick="closeVideoPopup()">&times;</span>
+        <iframe id="youtube-iframe" src="" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+
 
 
 
@@ -64,6 +87,8 @@
                 From The Shadows is a horror top-down game in which you are tasked with trying to rescue an old friend from a deserved island. 
                 Whilst rescuing this friend you notice this island isn't as deserted as you thought.
                 <br><br>
+                This project was created in a school project of 8
+                <br><br>
                 Made in Unity
                 </p>
             </div>
@@ -75,8 +100,8 @@
                 <div class="text">
                     <h1>Narrative Writing</h1>
                     <p>
-                    The main project was made and edited in Arcweave. 
-                    I drew images and added sound effects, including voiced lines, to further prove the concept and add to the tone.
+                    After a lot of revisions and scale-downs I managed to make a concise narrative that suited our small unpublished demo.
+                    The story centers around the theme of the past repeating itself and includes 6 characters, 4 of which being characters from previous expeditions that leave audio logs the player can find. 
                     <br><br>
                     <u>Click on the image to look at the demo.</u>
                     </p>
@@ -94,21 +119,27 @@
         <div class="content-group">
             <div class="content-panel">
                 <div class="text">
-                    <h1>Trailer Creation</h1>
+                    <h1>Cinematic Trailer Creation</h1>
                     <p>
-                    To write a scene I always start with a solid goal in mind. 
-                    This scene was meant to be the transition between acts, before the main character goes on a journey of death to reclaim the role of God of Death that was stolen from his master.
-                    Whilst writing I kept in mind the individual characters and their motivations to betray the main character and assasinate their mentor, adding more depth to their reaction than a simple 'Rhaaaa, they are evil gods!'.
+                    This trailer was created within 24 hours. I roughly rendered everything in Blender and voice acted a snippet of dialogue I wrote.
+                    The overal purpose of the trailer was to give the player a sense of the mystery that was waiting for them in the collapsed mines of the island.
                     <br><br>
-                    <u>Click on the image to read the script file.</u>
+                    I mostly used composition of thirds when creating the renders. 
+                    Some of the angles are meant to convey a sense of hopelessness in front of problems bigger than one's self.
+                    Others like the door render I created, were created with the intention of getting the player curious, and giving them a promise of the narrative importance of the door, and what secrets lie behind it.
+                    It is essentially portrayed the tsjechovs gun of the story.
+                    <br><br>
+                    <u>Click on the image to see the trailer</u>
                     </p>
                 </div>
 
                 <div class="content-image">
-                    <a href="attachments/V3.Scene - CoG.pdf" target="_blank" rel="noopener noreferrer">
-                        <img src="images/scriptScreenshot.png" alt="Confidant System" class="portrait">
-                    </a>
+                    <img src="images/FromTheShadowsBanner.jpg" 
+                        alt="Trailer Thumbnail" 
+                        class="portrait" 
+                        onclick="openVideoPopup('https://www.youtube.com/embed/TCwBnQtGFbc')">
                 </div>
+
             </div>
         </div>
 
@@ -117,10 +148,8 @@
                 <div class="text">
                     <h1>Environmental Design</h1>
                     <p>
-                    To help the voice actors prepare for the recording sessions I handed over character list together with backgrounds and characteristics.
-                    This also helped me during the direction of recording and made sessions run smoothly.
-                    <br><br>
-                    <u>Click on the image to read the voice direction file.</u>
+                    I did a chunk of the level design and environmental dressing, mostly situated around the ruined village.
+                    When creating the terrain and placing the props, I made sure the seperate sections of the village in a way that suited the narrative build up and storyline.
                     </p>
                 </div>
 
